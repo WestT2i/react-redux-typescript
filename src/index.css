@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*** Header ***/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+/*** Main ***/
+
+.main {
+  margin-top: 20px;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*** Modal ***/
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.modal_container {
+  max-width: 420px;
+  padding: 30px;
+  background: #eaeaea;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.modal_content {
+  width: 100%;
 }
